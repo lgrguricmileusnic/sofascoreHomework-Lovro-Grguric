@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF02EF2B260B551500F82DF6 /* TeamsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF02EF2A260B551500F82DF6 /* TeamsViewModelTests.swift */; };
+		AF02EF38260B5A2100F82DF6 /* TeamsDataServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF02EF37260B5A2100F82DF6 /* TeamsDataServiceMock.swift */; };
+		AF14B5AF260B2F16008A2C94 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14B5AE260B2F16008A2C94 /* DataService.swift */; };
+		AF14B5B2260B30C8008A2C94 /* TeamsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14B5B1260B30C8008A2C94 /* TeamsDataService.swift */; };
+		AF14B5B5260B30F1008A2C94 /* TeamDetailsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14B5B4260B30F1008A2C94 /* TeamDetailsDataService.swift */; };
+		AF1AD6E825F25D35001E494F /* TeamTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1AD6E725F25D35001E494F /* TeamTileView.swift */; };
+		AF1AD6EC25F270BC001E494F /* PlayerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1AD6EB25F270BC001E494F /* PlayerCardView.swift */; };
+		AF1AD6EF25F270CC001E494F /* TeamDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1AD6EE25F270CC001E494F /* TeamDetailsView.swift */; };
+		AF1AD6F225F27373001E494F /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1AD6F125F27373001E494F /* TeamsViewModel.swift */; };
+		AF1AD6F525F2738D001E494F /* TeamDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1AD6F425F2738D001E494F /* TeamDetailsViewModel.swift */; };
+		AF1AD6F925F4D15D001E494F /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1AD6F825F4D15D001E494F /* Team.swift */; };
+		AF1D950725F80791003F1E0B /* PlayerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D950625F80791003F1E0B /* PlayerDetailsView.swift */; };
+		AF3684ED260B70AE00AB00E5 /* TeamDetailsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3684EC260B70AE00AB00E5 /* TeamDetailsContentView.swift */; };
+		AF6B46D425F8D49800997B53 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B46D325F8D49800997B53 /* Color+Theme.swift */; };
+		AF7D6749260B8C6400D70E8F /* TeamsDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7D6748260B8C6400D70E8F /* TeamsDataServiceTests.swift */; };
+		AF8B9F8B25F81B9600B4AD7C /* PlayerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B9F8A25F81B9600B4AD7C /* PlayerInfoView.swift */; };
+		AF8B9F8E25F81BA200B4AD7C /* PlayerStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B9F8D25F81BA200B4AD7C /* PlayerStatisticsView.swift */; };
+		AFBEBAC725F2493A00B7F9EC /* SofaScoreAcademyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBEBAC625F2493A00B7F9EC /* SofaScoreAcademyApp.swift */; };
+		AFBEBAC925F2493A00B7F9EC /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBEBAC825F2493A00B7F9EC /* TeamsView.swift */; };
+		AFBEBACB25F2493C00B7F9EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFBEBACA25F2493C00B7F9EC /* Assets.xcassets */; };
+		AFBEBACE25F2493C00B7F9EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFBEBACD25F2493C00B7F9EC /* Preview Assets.xcassets */; };
+		AFBEBADE25F2500B00B7F9EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBEBADD25F2500B00B7F9EC /* AppDelegate.swift */; };
+		AFC3DF2A25F64ABD00ED0CE6 /* TeamRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3DF2925F64ABD00ED0CE6 /* TeamRowView.swift */; };
+		AFC3DF3025F65C8400ED0CE6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3DF2F25F65C8400ED0CE6 /* Player.swift */; };
+		AFC3DF3425F6638A00ED0CE6 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3DF3325F6638A00ED0CE6 /* CircleImage.swift */; };
+		AFCD39EC26021B66006AD5B6 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCD39EB26021B65006AD5B6 /* PieChart.swift */; };
+		AFCD39EF26021B88006AD5B6 /* PieSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCD39EE26021B88006AD5B6 /* PieSlice.swift */; };
+		AFCD39F226021BA1006AD5B6 /* PieSliceText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCD39F126021BA1006AD5B6 /* PieSliceText.swift */; };
+		AFCD39F526022974006AD5B6 /* Double+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCD39F426022973006AD5B6 /* Double+Round.swift */; };
+		AFDB8792260B36E100CC45E8 /* TeamsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB8791260B36E100CC45E8 /* TeamsGridView.swift */; };
+		AFDB8795260B385C00CC45E8 /* DataMocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB8794260B385C00CC45E8 /* DataMocker.swift */; };
+		AFFD7C11260B75CB00F992F5 /* TeamDetailsContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD7C10260B75CB00F992F5 /* TeamDetailsContentViewModel.swift */; };
+		ED1FDA99263F4CA4006DCF76 /* TextFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1FDA98263F4CA4006DCF76 /* TextFormat.swift */; };
+		ED1FDA9D263F5B37006DCF76 /* PlayerStatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1FDA9C263F5B37006DCF76 /* PlayerStatisticsViewModel.swift */; };
+		ED1FDAA1263F5E2C006DCF76 /* PlayersDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1FDAA0263F5E2C006DCF76 /* PlayersDataService.swift */; };
+		ED1FDAA726405DFC006DCF76 /* HBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1FDAA626405DFC006DCF76 /* HBarChart.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF02EF2D260B551500F82DF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFBEBABB25F2493A00B7F9EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFBEBAC225F2493A00B7F9EC;
+			remoteInfo = SofaScoreAcademy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF02EF28260B551400F82DF6 /* SofaScoreAcademyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SofaScoreAcademyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF02EF2A260B551500F82DF6 /* TeamsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModelTests.swift; sourceTree = "<group>"; };
+		AF02EF2C260B551500F82DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF02EF37260B5A2100F82DF6 /* TeamsDataServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsDataServiceMock.swift; sourceTree = "<group>"; };
+		AF14B5AE260B2F16008A2C94 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		AF14B5B1260B30C8008A2C94 /* TeamsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsDataService.swift; sourceTree = "<group>"; };
+		AF14B5B4260B30F1008A2C94 /* TeamDetailsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsDataService.swift; sourceTree = "<group>"; };
+		AF1AD6E725F25D35001E494F /* TeamTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTileView.swift; sourceTree = "<group>"; };
+		AF1AD6EB25F270BC001E494F /* PlayerCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardView.swift; sourceTree = "<group>"; };
+		AF1AD6EE25F270CC001E494F /* TeamDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsView.swift; sourceTree = "<group>"; };
+		AF1AD6F125F27373001E494F /* TeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
+		AF1AD6F425F2738D001E494F /* TeamDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsViewModel.swift; sourceTree = "<group>"; };
+		AF1AD6F825F4D15D001E494F /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		AF1D950625F80791003F1E0B /* PlayerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsView.swift; sourceTree = "<group>"; };
+		AF3684EC260B70AE00AB00E5 /* TeamDetailsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsContentView.swift; sourceTree = "<group>"; };
+		AF6B46D325F8D49800997B53 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
+		AF7D6748260B8C6400D70E8F /* TeamsDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsDataServiceTests.swift; sourceTree = "<group>"; };
+		AF8B9F8A25F81B9600B4AD7C /* PlayerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoView.swift; sourceTree = "<group>"; };
+		AF8B9F8D25F81BA200B4AD7C /* PlayerStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatisticsView.swift; sourceTree = "<group>"; };
+		AFBEBAC325F2493A00B7F9EC /* SofaScoreAcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SofaScoreAcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFBEBAC625F2493A00B7F9EC /* SofaScoreAcademyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SofaScoreAcademyApp.swift; sourceTree = "<group>"; };
+		AFBEBAC825F2493A00B7F9EC /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+		AFBEBACA25F2493C00B7F9EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFBEBACD25F2493C00B7F9EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AFBEBACF25F2493C00B7F9EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFBEBADD25F2500B00B7F9EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFC3DF2925F64ABD00ED0CE6 /* TeamRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRowView.swift; sourceTree = "<group>"; };
+		AFC3DF2F25F65C8400ED0CE6 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		AFC3DF3325F6638A00ED0CE6 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		AFCD39EB26021B65006AD5B6 /* PieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
+		AFCD39EE26021B88006AD5B6 /* PieSlice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSlice.swift; sourceTree = "<group>"; };
+		AFCD39F126021BA1006AD5B6 /* PieSliceText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSliceText.swift; sourceTree = "<group>"; };
+		AFCD39F426022973006AD5B6 /* Double+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Round.swift"; sourceTree = "<group>"; };
+		AFDB8791260B36E100CC45E8 /* TeamsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsGridView.swift; sourceTree = "<group>"; };
+		AFDB8794260B385C00CC45E8 /* DataMocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMocker.swift; sourceTree = "<group>"; };
+		AFFD7C10260B75CB00F992F5 /* TeamDetailsContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsContentViewModel.swift; sourceTree = "<group>"; };
+		ED1FDA98263F4CA4006DCF76 /* TextFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormat.swift; sourceTree = "<group>"; };
+		ED1FDA9C263F5B37006DCF76 /* PlayerStatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatisticsViewModel.swift; sourceTree = "<group>"; };
+		ED1FDAA0263F5E2C006DCF76 /* PlayersDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersDataService.swift; sourceTree = "<group>"; };
+		ED1FDAA626405DFC006DCF76 /* HBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBarChart.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF02EF25260B551400F82DF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFBEBAC025F2493A00B7F9EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF02EF29260B551400F82DF6 /* SofaScoreAcademyTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF02EF36260B5A0000F82DF6 /* Mocks */,
+				AF02EF2A260B551500F82DF6 /* TeamsViewModelTests.swift */,
+				AF7D6748260B8C6400D70E8F /* TeamsDataServiceTests.swift */,
+				AF02EF2C260B551500F82DF6 /* Info.plist */,
+			);
+			path = SofaScoreAcademyTests;
+			sourceTree = "<group>";
+		};
+		AF02EF36260B5A0000F82DF6 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				AF02EF37260B5A2100F82DF6 /* TeamsDataServiceMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		AF14B5AD260B2ECE008A2C94 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				AFDB8797260B393E00CC45E8 /* DataMocker */,
+				AF14B5AE260B2F16008A2C94 /* DataService.swift */,
+				AF14B5B1260B30C8008A2C94 /* TeamsDataService.swift */,
+				AF14B5B4260B30F1008A2C94 /* TeamDetailsDataService.swift */,
+				ED1FDAA0263F5E2C006DCF76 /* PlayersDataService.swift */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+		AF1AD6F725F4D149001E494F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF1AD6F825F4D15D001E494F /* Team.swift */,
+				AFC3DF2F25F65C8400ED0CE6 /* Player.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AF6B46D625F8D4A000997B53 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B46D325F8D49800997B53 /* Color+Theme.swift */,
+				AFCD39F426022973006AD5B6 /* Double+Round.swift */,
+				ED1FDA98263F4CA4006DCF76 /* TextFormat.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AF8B9F9025F81BA500B4AD7C /* PlayerPageView */ = {
+			isa = PBXGroup;
+			children = (
+				AF8B9F8A25F81B9600B4AD7C /* PlayerInfoView.swift */,
+				AF8B9F8D25F81BA200B4AD7C /* PlayerStatisticsView.swift */,
+				ED1FDA9C263F5B37006DCF76 /* PlayerStatisticsViewModel.swift */,
+			);
+			path = PlayerPageView;
+			sourceTree = "<group>";
+		};
+		AFBEBABA25F2493A00B7F9EC = {
+			isa = PBXGroup;
+			children = (
+				AFBEBAC525F2493A00B7F9EC /* SofaScoreAcademy */,
+				AF02EF29260B551400F82DF6 /* SofaScoreAcademyTests */,
+				AFBEBAC425F2493A00B7F9EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFBEBAC425F2493A00B7F9EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFBEBAC325F2493A00B7F9EC /* SofaScoreAcademy.app */,
+				AF02EF28260B551400F82DF6 /* SofaScoreAcademyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFBEBAC525F2493A00B7F9EC /* SofaScoreAcademy */ = {
+			isa = PBXGroup;
+			children = (
+				AFBEBAD625F24A2400B7F9EC /* SupportingFiles */,
+				AF1AD6F725F4D149001E494F /* Models */,
+				AFBEBAD925F24CC000B7F9EC /* Features */,
+				AF14B5AD260B2ECE008A2C94 /* DataService */,
+			);
+			path = SofaScoreAcademy;
+			sourceTree = "<group>";
+		};
+		AFBEBACC25F2493C00B7F9EC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AFBEBACD25F2493C00B7F9EC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFBEBAD625F24A2400B7F9EC /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AFBEBAC625F2493A00B7F9EC /* SofaScoreAcademyApp.swift */,
+				AFBEBADD25F2500B00B7F9EC /* AppDelegate.swift */,
+				AFBEBACA25F2493C00B7F9EC /* Assets.xcassets */,
+				AFBEBACF25F2493C00B7F9EC /* Info.plist */,
+				AFBEBACC25F2493C00B7F9EC /* Preview Content */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		AFBEBAD925F24CC000B7F9EC /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				ED1FDAA426405DAA006DCF76 /* BarCharts */,
+				AFCD39EA26021B4E006AD5B6 /* PieChart */,
+				AF6B46D625F8D4A000997B53 /* Utilities */,
+				AFC3DF3225F6637200ED0CE6 /* CommonViews */,
+				AFBEBADA25F24D9D00B7F9EC /* TeamsView */,
+				AFBEBADB25F24DB900B7F9EC /* TeamDetailsView */,
+				AFBEBADC25F24DE400B7F9EC /* PlayerDetailsView */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		AFBEBADA25F24D9D00B7F9EC /* TeamsView */ = {
+			isa = PBXGroup;
+			children = (
+				AFC3DF2825F64A4600ED0CE6 /* TeamLayoutView */,
+				AFBEBAC825F2493A00B7F9EC /* TeamsView.swift */,
+				AF1AD6F125F27373001E494F /* TeamsViewModel.swift */,
+			);
+			path = TeamsView;
+			sourceTree = "<group>";
+		};
+		AFBEBADB25F24DB900B7F9EC /* TeamDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				AFDD1B8325F7D44F000A8474 /* PlayerLayoutView */,
+				AFFD7C14260B75D600F992F5 /* TeamDetailsContentView */,
+				AF1AD6EE25F270CC001E494F /* TeamDetailsView.swift */,
+				AF1AD6F425F2738D001E494F /* TeamDetailsViewModel.swift */,
+			);
+			path = TeamDetailsView;
+			sourceTree = "<group>";
+		};
+		AFBEBADC25F24DE400B7F9EC /* PlayerDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				AF8B9F9025F81BA500B4AD7C /* PlayerPageView */,
+				AF1D950625F80791003F1E0B /* PlayerDetailsView.swift */,
+			);
+			path = PlayerDetailsView;
+			sourceTree = "<group>";
+		};
+		AFC3DF2825F64A4600ED0CE6 /* TeamLayoutView */ = {
+			isa = PBXGroup;
+			children = (
+				AFC3DF2925F64ABD00ED0CE6 /* TeamRowView.swift */,
+				AF1AD6E725F25D35001E494F /* TeamTileView.swift */,
+				AFDB8791260B36E100CC45E8 /* TeamsGridView.swift */,
+			);
+			path = TeamLayoutView;
+			sourceTree = "<group>";
+		};
+		AFC3DF3225F6637200ED0CE6 /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				AFC3DF3325F6638A00ED0CE6 /* CircleImage.swift */,
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		AFCD39EA26021B4E006AD5B6 /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				AFCD39EB26021B65006AD5B6 /* PieChart.swift */,
+				AFCD39EE26021B88006AD5B6 /* PieSlice.swift */,
+				AFCD39F126021BA1006AD5B6 /* PieSliceText.swift */,
+			);
+			path = PieChart;
+			sourceTree = "<group>";
+		};
+		AFDB8797260B393E00CC45E8 /* DataMocker */ = {
+			isa = PBXGroup;
+			children = (
+				AFDB8794260B385C00CC45E8 /* DataMocker.swift */,
+			);
+			path = DataMocker;
+			sourceTree = "<group>";
+		};
+		AFDD1B8325F7D44F000A8474 /* PlayerLayoutView */ = {
+			isa = PBXGroup;
+			children = (
+				AF1AD6EB25F270BC001E494F /* PlayerCardView.swift */,
+			);
+			path = PlayerLayoutView;
+			sourceTree = "<group>";
+		};
+		AFFD7C14260B75D600F992F5 /* TeamDetailsContentView */ = {
+			isa = PBXGroup;
+			children = (
+				AF3684EC260B70AE00AB00E5 /* TeamDetailsContentView.swift */,
+				AFFD7C10260B75CB00F992F5 /* TeamDetailsContentViewModel.swift */,
+			);
+			path = TeamDetailsContentView;
+			sourceTree = "<group>";
+		};
+		ED1FDAA426405DAA006DCF76 /* BarCharts */ = {
+			isa = PBXGroup;
+			children = (
+				ED1FDAA526405DC4006DCF76 /* HBarChart */,
+			);
+			path = BarCharts;
+			sourceTree = "<group>";
+		};
+		ED1FDAA526405DC4006DCF76 /* HBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				ED1FDAA626405DFC006DCF76 /* HBarChart.swift */,
+			);
+			path = HBarChart;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF02EF27260B551400F82DF6 /* SofaScoreAcademyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF02EF31260B551500F82DF6 /* Build configuration list for PBXNativeTarget "SofaScoreAcademyTests" */;
+			buildPhases = (
+				AF02EF24260B551400F82DF6 /* Sources */,
+				AF02EF25260B551400F82DF6 /* Frameworks */,
+				AF02EF26260B551400F82DF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF02EF2E260B551500F82DF6 /* PBXTargetDependency */,
+			);
+			name = SofaScoreAcademyTests;
+			productName = SofaScoreAcademyTests;
+			productReference = AF02EF28260B551400F82DF6 /* SofaScoreAcademyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFBEBAC225F2493A00B7F9EC /* SofaScoreAcademy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFBEBAD225F2493C00B7F9EC /* Build configuration list for PBXNativeTarget "SofaScoreAcademy" */;
+			buildPhases = (
+				AFBEBABF25F2493A00B7F9EC /* Sources */,
+				AFBEBAC025F2493A00B7F9EC /* Frameworks */,
+				AFBEBAC125F2493A00B7F9EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SofaScoreAcademy;
+			productName = SofaScoreAcademy;
+			productReference = AFBEBAC325F2493A00B7F9EC /* SofaScoreAcademy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFBEBABB25F2493A00B7F9EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					AF02EF27260B551400F82DF6 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AFBEBAC225F2493A00B7F9EC;
+					};
+					AFBEBAC225F2493A00B7F9EC = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = AFBEBABE25F2493A00B7F9EC /* Build configuration list for PBXProject "SofaScoreAcademy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFBEBABA25F2493A00B7F9EC;
+			productRefGroup = AFBEBAC425F2493A00B7F9EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFBEBAC225F2493A00B7F9EC /* SofaScoreAcademy */,
+				AF02EF27260B551400F82DF6 /* SofaScoreAcademyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF02EF26260B551400F82DF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFBEBAC125F2493A00B7F9EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFBEBACE25F2493C00B7F9EC /* Preview Assets.xcassets in Resources */,
+				AFBEBACB25F2493C00B7F9EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF02EF24260B551400F82DF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF02EF2B260B551500F82DF6 /* TeamsViewModelTests.swift in Sources */,
+				AF7D6749260B8C6400D70E8F /* TeamsDataServiceTests.swift in Sources */,
+				AF02EF38260B5A2100F82DF6 /* TeamsDataServiceMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFBEBABF25F2493A00B7F9EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC3DF3025F65C8400ED0CE6 /* Player.swift in Sources */,
+				AFDB8792260B36E100CC45E8 /* TeamsGridView.swift in Sources */,
+				AFCD39EC26021B66006AD5B6 /* PieChart.swift in Sources */,
+				AF1D950725F80791003F1E0B /* PlayerDetailsView.swift in Sources */,
+				AF1AD6F925F4D15D001E494F /* Team.swift in Sources */,
+				AFBEBADE25F2500B00B7F9EC /* AppDelegate.swift in Sources */,
+				AFC3DF2A25F64ABD00ED0CE6 /* TeamRowView.swift in Sources */,
+				AFFD7C11260B75CB00F992F5 /* TeamDetailsContentViewModel.swift in Sources */,
+				AF1AD6F525F2738D001E494F /* TeamDetailsViewModel.swift in Sources */,
+				AF8B9F8E25F81BA200B4AD7C /* PlayerStatisticsView.swift in Sources */,
+				AFC3DF3425F6638A00ED0CE6 /* CircleImage.swift in Sources */,
+				AFCD39EF26021B88006AD5B6 /* PieSlice.swift in Sources */,
+				AF1AD6EF25F270CC001E494F /* TeamDetailsView.swift in Sources */,
+				AFCD39F526022974006AD5B6 /* Double+Round.swift in Sources */,
+				AF14B5B2260B30C8008A2C94 /* TeamsDataService.swift in Sources */,
+				AF6B46D425F8D49800997B53 /* Color+Theme.swift in Sources */,
+				ED1FDAA1263F5E2C006DCF76 /* PlayersDataService.swift in Sources */,
+				AF1AD6E825F25D35001E494F /* TeamTileView.swift in Sources */,
+				AFBEBAC925F2493A00B7F9EC /* TeamsView.swift in Sources */,
+				AF14B5AF260B2F16008A2C94 /* DataService.swift in Sources */,
+				ED1FDAA726405DFC006DCF76 /* HBarChart.swift in Sources */,
+				AFDB8795260B385C00CC45E8 /* DataMocker.swift in Sources */,
+				AF1AD6F225F27373001E494F /* TeamsViewModel.swift in Sources */,
+				ED1FDA99263F4CA4006DCF76 /* TextFormat.swift in Sources */,
+				AF3684ED260B70AE00AB00E5 /* TeamDetailsContentView.swift in Sources */,
+				AF8B9F8B25F81B9600B4AD7C /* PlayerInfoView.swift in Sources */,
+				AF14B5B5260B30F1008A2C94 /* TeamDetailsDataService.swift in Sources */,
+				ED1FDA9D263F5B37006DCF76 /* PlayerStatisticsViewModel.swift in Sources */,
+				AFCD39F226021BA1006AD5B6 /* PieSliceText.swift in Sources */,
+				AFBEBAC725F2493A00B7F9EC /* SofaScoreAcademyApp.swift in Sources */,
+				AF1AD6EC25F270BC001E494F /* PlayerCardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF02EF2E260B551500F82DF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFBEBAC225F2493A00B7F9EC /* SofaScoreAcademy */;
+			targetProxy = AF02EF2D260B551500F82DF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AF02EF2F260B551500F82DF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ACPF4233H8;
+				INFOPLIST_FILE = SofaScoreAcademyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SofaScore.iOS.SofaScoreAcademyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SofaScoreAcademy.app/SofaScoreAcademy";
+			};
+			name = Debug;
+		};
+		AF02EF30260B551500F82DF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ACPF4233H8;
+				INFOPLIST_FILE = SofaScoreAcademyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SofaScore.iOS.SofaScoreAcademyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SofaScoreAcademy.app/SofaScoreAcademy";
+			};
+			name = Release;
+		};
+		AFBEBAD025F2493C00B7F9EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFBEBAD125F2493C00B7F9EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFBEBAD325F2493C00B7F9EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SofaScoreAcademy/SupportingFiles/Preview Content\"";
+				DEVELOPMENT_TEAM = ACPF4233H8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SofaScoreAcademy/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SofaScore.iOS.SofaScoreAcademy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFBEBAD425F2493C00B7F9EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SofaScoreAcademy/SupportingFiles/Preview Content\"";
+				DEVELOPMENT_TEAM = ACPF4233H8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SofaScoreAcademy/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SofaScore.iOS.SofaScoreAcademy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF02EF31260B551500F82DF6 /* Build configuration list for PBXNativeTarget "SofaScoreAcademyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF02EF2F260B551500F82DF6 /* Debug */,
+				AF02EF30260B551500F82DF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFBEBABE25F2493A00B7F9EC /* Build configuration list for PBXProject "SofaScoreAcademy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFBEBAD025F2493C00B7F9EC /* Debug */,
+				AFBEBAD125F2493C00B7F9EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFBEBAD225F2493C00B7F9EC /* Build configuration list for PBXNativeTarget "SofaScoreAcademy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFBEBAD325F2493C00B7F9EC /* Debug */,
+				AFBEBAD425F2493C00B7F9EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFBEBABB25F2493A00B7F9EC /* Project object */;
+}
