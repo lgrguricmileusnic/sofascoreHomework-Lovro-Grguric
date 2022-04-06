@@ -1,3 +1,3 @@
 # sofascoreHomework-Lovro-Grguric
 
-Projekti u sklopu sofascore swiftui kursa.
+Projekti u sklopu Sofascore Academy SwiftUI kursa.
